@@ -224,3 +224,43 @@ let obj = {
 
 };
 
+// dom
+// let a = document.queryselector("a");
+// a.removeattribute("href");
+ 
+// let h1 = document.createElement("h1");
+// h1.textcontent = "hello Zeal";
+// document.querySelector("body").prepend(h1); 
+// //prepend and append to attach elements html                                                                               to js
+                                           // append means the last element in the body
+                                        // prepend means the first element in the body
+
+
+
+// let h1 = document.createElement("h1");
+// h1.textcontent = "i m out";
+
+// document.queryselector("div").appendchild(h1); // appendchild is used to add a child element to a parent element
+
+
+// let h1 = document.querySelector("h1");
+// // js to css color change 
+// h1.style.color = "blue";
+// h1.style.backgroundColor = "purple"; // change the background color of the h1 element
+// console.dir(h1);
+
+
+// let li = document.querySelectorAll("li");
+// FileList.array.forEach(function (val) {
+//     console.log(val.textContent);
+    
+// });
+
+// textcontent 
+// let p = document.querySelector("p");
+// p.innerHtml = "<b>updated</b> by js "; // innerHtml is used to change the inner html of an element
+
+let a = document.querySelector("a");
+a.href = "https://www.youtube.com/"; // change the href attribute of the a element
+
+
