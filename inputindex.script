@@ -1,0 +1,47 @@
+//browser me page pe kuch bbhi karo event raise hoo jayaga
+//event means kuch bhi action jo user perform karega
+//event handling means us action ke response me kuch action perform karna
+
+// let h1 = document.querySelector("h1");
+// h1.addEventListener("click", function(){
+//     h1.style.color = "red";
+// });
+
+
+// to change the text color 
+// 1 select the paragraph P first ( let p = document.querySelector("p"); ) use this same syntex every time to select any element
+
+// 2 then u already creat the evnet of lorem or any then u want to change the color of text when u click which and EventListener use with click event
+
+// let p = document.querySelector("p");
+// // p.addEventListener("click", function() {
+// //     p.style.color = "blue";
+// //     p.style.backgroundColor = " yellow";
+//     p.addEventListener("dblclick", function() {
+//     p.style.color = "purple"; // change the text color to blue
+// });
+//In total, there are 100+ events supported across categories.
+//  For exam/interview purpose, usually focus on Mouse, Keyboard, Form, and Window events.
+
+
+
+// let p = document.querySelector("p");
+// p.addEventListner("click", function () {
+//     p.style.color = "blue";
+// });
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("input", function(dets) {
+//     if (dets.data !== null) {
+// console.log("typed");
+//     }
+// });
+
+
+let sel = document.querySelector("select");
+let device = document.querySelector("#device");
+
+sel.addEventListener("change", function (dets) {
+        device.textContent = `${dets.target.value} device selected`;     
+});
+
