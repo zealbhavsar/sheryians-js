@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body { 
+      width: 100%;
+      height: 100%;   
+    }
+
+    #main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: #fdfcfc;
+      flex-direction: column;
+    }
+
+    input[type="file"] {
+      display: none; /* Hide the default file input */
+    }
+
+    #btn {
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    #btn:hover {
+      background-color: #6f42c1;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <!-- Hidden File Input -->
+    <input id="fileinp" type="file">
+    <div id="btn">
+      Upload File
+    </div>
+    </div>
+
+    
+  
+  <script src="eventhandeling.js"></script>
+</body>
+</html>
+
+let btn = document.querySelector("#btn");
+let fileInput = document.querySelector("#fileinp");
+
+btn.addEventListener("click", function() {
+fileInput.click(); // Trigger the file input click event
+
+
+});   
+fileInput.addEventListener("change", function(dets) {
+    btn.textContent = dets.target.files[0].name; 
+    if (file) {
+        btn.textcontent = file.name // Access the selected file
+});
+
+
+
